@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="color-options">
+        <input type="color" id="color" />
+        <div class="color-option" style="background-color: #ffeaa7;" data-color="#ffeaa7"></div>
+        <div class="color-option" style="background-color: #fab1a0;" data-color="#fab1a0"></div>
+        <div class="color-option" style="background-color: #fdcb6e;" data-color="#fdcb6e"></div>
+        <div class="color-option" style="background-color: #e17055;" data-color="#e17055"></div>
+        <div class="color-option" style="background-color: #a29bfe;" data-color="#a29bfe"></div>
+        <div class="color-option" style="background-color: #fd79a8;" data-color="#fd79a8"></div>
+        <div class="color-option" style="background-color: #81ecec;" data-color="#81ecec"></div>
+        <div class="color-option" style="background-color: #b2bec3;" data-color="#b2bec3"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <input id="line-width" type="range" min="1"  max="10" value="5" step="0.5"/>
+        <button id="mode-btn">Fill</button>
+        <button id="destroy-btn">Destroy</button>
+        <button id="eraser-btn">Eraser</button>
+        <label for="file">
+            Add Photo
+            <input type="file" accept="image/*" id="file"/> <!-- img만 받아올 수 있음 -->
+        </label>
+        <input type="text" placeholder="Write and then double click :)" id="text"/>
+        <button id="save">Save image</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

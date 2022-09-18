@@ -1,0 +1,90 @@
+@import "reset.css";
+@font-face {
+    font-family: 'HBIOS-SYS';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2') format('woff2');
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+canvas{
+    width: 800px;
+    height: 800px; 
+    border: 5px solid rgb(238, 235, 235); 
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 20px;
+}
+
+body{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.btns{
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+    width: 250px;
+}
+.color-options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.color-option{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid white;
+    transition: transform ease-in-out .3s;
+}
+.color-option:hover{
+    transform: scale(1.2);
+}
+input#color{
+    background-color: white;
+}
+button, label{
+    all:unset; /* css 속성을 전부 제거 */
+    padding: 10px 0;
+    text-align: center;
+    background-color: thistle;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .3s;
+}
+button#save{
+    width: 130px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(191, 216, 198);
+}
+button:hover{
+    opacity: 0.6;
+}
+label:hover{
+    opacity: 0.6;
+}
+input#file{
+    display: none;
+}
+input#text{
+    all:unset;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}
