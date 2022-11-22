@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 body{
+    width: 100%;
+    height: 100vh;
     display: flex; 
     gap: 20px; 
     justify-content: space-between; 
@@ -13,7 +15,7 @@ body{
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    margin: 30px auto;
+    margin: 60px auto;
 }
 
 canvas{
