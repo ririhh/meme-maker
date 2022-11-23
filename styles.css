@@ -15,7 +15,6 @@ body{
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     font-family: 'Montserrat', sans-serif;
     background-attachment: fixed;
-    margin: 60px auto;
 }
 
 canvas{
